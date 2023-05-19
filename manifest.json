@@ -1,0 +1,16 @@
+{
+    "manifest_version":3,
+    "name":"Jenkins build status checker",
+    "version": "0.0.1",
+    "description": "Check the status of Jenkins jobs",
+    "host_permissions":["http://localhost:8080/*"],
+    "background":{
+        "service_worker":"background.js"
+    },
+    "permissions":["storage","tabs","notifications"],
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon": "icon.png",
+        "title": "Jenkins build status checker"
+    }
+}
